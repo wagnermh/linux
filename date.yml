@@ -6,4 +6,8 @@
       command: date
       register: current_date
       changed_when: false
+
+    - name: TASK 02 - Print current Time Zone
+      debug:
+        msg: "{{ current_date.stdout  }}"
 ...
