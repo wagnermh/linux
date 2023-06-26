@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: yes
+  tasks:
+    - name: TASK 01 - Get current Date
+      command: date
+      register: current_date
+      changed_when: false
+...
